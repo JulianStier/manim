@@ -2,7 +2,7 @@ import re
 import os
 import copy
 import hashlib
-import cairo
+import cairocffi as cairo
 import manimlib.constants as consts
 from manimlib.constants import *
 from manimlib.mobject.svg.svg_mobject import SVGMobject

@@ -6,7 +6,7 @@ import copy
 
 from PIL import Image
 from scipy.spatial.distance import pdist
-import cairo
+import cairocffi as cairo
 import numpy as np
 
 from manimlib.constants import *
