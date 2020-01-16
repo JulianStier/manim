@@ -6,7 +6,7 @@ import copy
 
 from PIL import Image
 from scipy.spatial.distance import pdist
-import cairocffi as cairo
+import cairo
 import numpy as np
 
 from manimlib.constants import *
@@ -288,7 +288,7 @@ class Camera(object):
         fh = self.get_frame_height()
         fc = self.get_frame_center()
         surface = cairo.ImageSurface.create_for_data(
-            pixel_array,
+            pixel_array.flatten(),
             cairo.FORMAT_ARGB32,
             pw, ph
         )
